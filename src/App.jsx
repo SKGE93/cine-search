@@ -8,6 +8,7 @@ function App() {
   const [recherche, setRecherche] = useState('')
 
   useEffect(() => {
+  const timer = setTimeout(() => {
     if (recherche === '') {
       api.get('/movie/popular')
         .then(response => setFilms(response.data.results))
@@ -15,7 +16,10 @@ function App() {
       api.get('/search/movie', { params: { query: recherche } })
         .then(response => setFilms(response.data.results))
     }
-  }, [recherche])
+  }, 500)
+
+  return () => clearTimeout(timer)
+}, [recherche])
 
   return (
     <div className="app">
