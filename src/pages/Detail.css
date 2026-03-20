@@ -1,0 +1,48 @@
+.detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.detail-back {
+  background: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+}
+
+.detail-back:hover {
+  background-color: #ffffff;
+  color: #0f0f0f;
+}
+
+.detail-content {
+  display: flex;
+  gap: 40px;
+}
+
+.detail-content img {
+  border-radius: 10px;
+  min-width: 200px;
+}
+
+.detail-info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.detail-info p {
+  color: #aaaaaa;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.detail-info .note {
+  color: #f5c518;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
