@@ -13,8 +13,13 @@ function App() {
   }, [])
 
   return (
-    <div>
+  <div>
       <h1>CinéSearch</h1>
+      {films.map(film => (
+        <div key={film.id}>
+          <p>{film.title}</p>
+        </div>
+      ))}
     </div>
   )
 }
