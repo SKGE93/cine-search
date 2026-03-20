@@ -30,7 +30,7 @@ function Detail() {
         />
         <div className="detail-info">
           <h1>{film.title}</h1>
-          <p className="note">⭐ {film.vote_average}/10</p>
+          <p className="note">⭐ {film.vote_average.toFixed(1)}/10</p>
           <p>📅 {film.release_date}</p>
           <p>{film.overview}</p>
         </div>
