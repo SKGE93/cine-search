@@ -1,16 +1,57 @@
-# React + Vite
+# CinéSearch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web de recherche et d'exploration de films, construite avec React et l'API TMDB.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Pourquoi ce projet ?
 
-## React Compiler
+Ce projet a été réalisé en dehors du cadre scolaire dans le but de progresser sur des technologies que je n'ai pas eu l'occasion de pratiquer en cours : la consommation d'une API REST, la gestion d'état avec React et la navigation entre pages avec React Router.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Fonctionnalités
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Affichage des films populaires du moment
+- Recherche dynamique avec debounce
+- Page de détail par film (synopsis, note, date de sortie)
+- Interface en français via l'API TMDB
+- Navigation sans rechargement de page (SPA)
+
+---
+
+## Technologies utilisées
+
+- **React** — bibliothèque UI
+- **Vite** — environnement de développement
+- **React Router** — navigation entre pages
+- **Axios** — requêtes HTTP
+- **TMDB API** — données des films
+
+---
+
+## Installation
+```bash
+git clone https://github.com/TON_USERNAME/cine-search.git
+cd cine-search
+npm install
+```
+
+Crée un fichier `.env.local` à la racine :
+```
+VITE_TMDB_API_KEY=ton_jeton_dacces_tmdb
+```
+
+Lance le projet :
+```bash
+npm run dev
+```
+
+---
+
+## Aperçu
+
+![Page d'accueil](screenshots/screen1.png)
+![Page d'accueil](screenshots/screen2.png)
+![Page d'accueil](screenshots/screen3.png)
+![Page d'accueil](screenshots/screen4.png)
