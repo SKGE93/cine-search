@@ -16,3 +16,25 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
 }
+
+.search-bar {
+  display: block;
+  margin: 0 auto 30px auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-bar::placeholder {
+  color: #888888;
+}
+
+.search-bar:focus {
+  border: 1px solid #e50914;
+}
