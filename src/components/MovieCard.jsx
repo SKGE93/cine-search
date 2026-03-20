@@ -10,6 +10,7 @@ function MovieCard({ film }) {
       : 'https://via.placeholder.com/150x225?text=No+Image'
   }
   alt={film.title}
+  width={150}
 />
       <p>{film.title}</p>
     </div>
