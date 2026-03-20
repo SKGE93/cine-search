@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import api from './services/tmdb'
+import MovieCard from './components/MovieCard'
 
 function App() {
   const [films, setFilms] = useState([])
@@ -7,18 +8,15 @@ function App() {
   useEffect(() => {
     api.get('/movie/popular')
       .then(response => {
-        console.log(response.data)
         setFilms(response.data.results)
       })
   }, [])
 
   return (
-  <div>
+    <div>
       <h1>CinéSearch</h1>
       {films.map(film => (
-        <div key={film.id}>
-          <p>{film.title}</p>
-        </div>
+        <MovieCard key={film.id} film={film} />
       ))}
     </div>
   )
