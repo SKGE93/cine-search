@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import api from './services/tmdb'
 import MovieCard from './components/MovieCard'
+import './App.css'
 
 function App() {
   const [films, setFilms] = useState([])
@@ -13,11 +14,13 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <div className="app">
       <h1>CinéSearch</h1>
-      {films.map(film => (
-        <MovieCard key={film.id} film={film} />
-      ))}
+      <div className="films-grid">
+        {films.map(film => (
+          <MovieCard key={film.id} film={film} />
+        ))}
+      </div>
     </div>
   )
 }
