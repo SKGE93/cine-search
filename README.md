@@ -6,7 +6,7 @@ Application web de recherche et d'exploration de films, construite avec React et
 
 ## Pourquoi ce projet ?
 
-Ce projet a été réalisé en dehors du cadre scolaire dans le but de progresser sur des technologies que je n'ai pas eu l'occasion de pratiquer en cours comme la consommation d'une API REST, la gestion d'état avec React et la navigation entre pages avec React Router.
+Ce projet a été réalisé en dehors du cadre scolaire dans le but de progresser sur des technologies que je n'ai pas eu l'occasion de assez pratiquer en cours comme la consommation d'une API REST, la gestion d'état avec React et la navigation entre pages avec React Router.
 
 ---
 
